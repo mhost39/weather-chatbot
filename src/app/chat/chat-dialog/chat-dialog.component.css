@@ -1,0 +1,51 @@
+.message {
+    border-radius: 50px;
+    margin: 0 15px 10px;
+    padding: 15px 20px;
+    position: relative;
+    font-weight: bold;
+}
+.message.to {
+    background-color: #2095FE;
+    color: #fff;
+    margin-left: 100px;
+    text-align: right;
+}
+.message.from {
+    background-color: #E5E4E9;
+    color: #363636;
+    margin-right: 100px;
+
+}
+.message.to + .message.to,
+.message.from + .message.from {
+margin-top: -10px;
+}
+.chat-window {
+    width: 750px;
+    margin: auto;
+    border: 1px solid #d5d5d5;
+  }
+.sub-Button{
+    background-color: #2095FE;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 19%;
+
+}
+.inp-val{
+
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
