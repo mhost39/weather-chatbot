@@ -1,27 +1,25 @@
-# Chatbot
+# Weather chatBot
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+#### This project is generated with Angular, dialogflow and api.openweathermap.
 
-## Development server
+####  you can talk with weather app in small talk like:
+####  About agent : who are you , ...
+####  Hello/Goodbye : Bye-bye! , Good evening! , etc ...
+### and you can ask weather bot to the weater like:
+  #### weather for cairo , what is the weather in london
+  #### or any question content " weather and city"
+  
+## Test the hosted app 
+  https://peaceful-retreat-60122.herokuapp.com/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## How run project
 
-## Code scaffolding
+#### first go to src/environments/environment.ts
+#### and set dialogflow.angularBot = "Your_Access_Token"
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+#### by Docker run :
+#### docker build --rm -t weatherbot:latest .
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+#### and : 
+#### docker run --rm -d -p 90:80/tcp weatherbot:latest
+# and on your browser : http://localhost:90
