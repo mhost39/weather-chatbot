@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot"
+    "postinstall": "node --max_old_space_size=4098 node_modules/@angular/cli/bin/ng build --prod"
   },
   "private": true,
   "dependencies": {
